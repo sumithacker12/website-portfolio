@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-webpage</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sidebar-image">
+        <img class="portfolio-image" src="Portfolio image-1.png" alt="Sidebar Image">
+        <div class="profile-name"><h3>Sumit Mehara</h3></div>
+    </div>
+    <div class="navbar-box">
+        <h2>Contact Me</h2>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" class="nav-btn"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="skills.html" class="nav-btn"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects" class="nav-btn"><i class="fas fa-briefcase"></i> Projects</a></li>
+            <li><a href="contact.html" class="nav-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+
+
+        </nav>
+        <div>
+            <h3>Get in Touch</h3>
+            <p>If you'd like to reach out, feel free to connect with me on social media or send me an email!</p>
+            <ul>
+               <li>
+                  <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                  </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/yourprofile" target="_blank">
+                  <i class="fab fa-twitter"></i> Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+               </a>
+              </li>
+              <li>
+                <a href="mailto:youremail@example.com">
+                <i class="fas fa-envelope"></i> Email
+              </a>
+              </li>
+            </ul>
+
+        </div>
+    <script>
+  const buttons = document.querySelectorAll('.nav-btn');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.remove('animate-on-click'); // reset
+      void btn.offsetWidth; // force reflow (so animation can re-run)
+      btn.classList.add('animate-on-click');
+    });
+  });
+</script>
+        
+</body>
+</html>

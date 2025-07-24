@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+}
+
+
+.sidebar-image {
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    bottom: 10px;
+    width: 300px;
+    height: 96%;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column; /* Add this to stack items vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.portfolio-image {
+    width: 360px;
+    height: auto;
+    margin-top: 0;
+}
+
+.profile-name h3 {
+    margin-top: 5px; /* Reduce space above the name */
+    margin-bottom: 0; /* Optional: remove space below name */
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+     font-size: 36px;
+}
+
+.navbar-box {
+    position: absolute;
+    top: 0;
+    right: 8px; /* Gives 8px space from the right edge */
+    width: 860px;
+    height: 96%;
+    background-color: #333;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 6px; /* Space between h3 and navbar */
+    z-index: 10;
+}
+
+
+.navbar-box h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 38px;
+    margin: 10px 0 0 0;
+}
+
+.navbar {
+    background-color: black;
+    top: 0;
+    width: 420px; /* Shrinks navbar to fit content */
+    height: 50px;
+    flex-direction: row;   
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 0 0 0 auto; /* Aligns navbar to the right inside the flex column */
+    padding: 4px 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+/* NAVBAR LINKS */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+@keyframes shadow-drop-2-tb {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.animate-on-click {
+  animation: shadow-drop-2-tb 0.4s ease;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+ul a:hover {
+    color: yellow;
+}
